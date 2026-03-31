@@ -214,3 +214,46 @@ body {
     background-color: #373737;
 }
 /*-----------------------------------FIN FORMULARIO--------------------*/
+/*-----------------------------------INICIO FOOTER--------------------*/
+
+.footer {
+    background-color: #020617;
+    padding: 30px 20px;
+    text-align: center;
+}
+.footer-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+
+    max-width: 1000px;
+    margin: auto;
+}
+.footer p {
+    color: #94a3b8;
+}
+.socials {
+    display: flex;
+    gap: 20px;
+    
+}
+.socials a {
+    color: #e2e8f0;
+    text-decoration: none;
+    transition: 0.3s;
+}
+.socials .facebook:hover {
+    color: #3b82f6;
+}
+.socials .instagram:hover {
+    color: #8338bc;
+}
+.socials .twitter:hover {
+    color: #1da1f2;
+}
+.socials .youtube:hover {
+    color: #ff0000;
+}
+/*-----------------------------------FIN FOOTER--------------------*/
