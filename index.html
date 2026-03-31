@@ -15,20 +15,20 @@
       <div class="div-header">
         <h1>La ruta del programador</h1>
         <p>Descubre el camino para convertirte en un programador exitoso</p>
-        <button>Empieza ahora</button>
+        <a href="#features" class="btn">Empieza ahora</a>
       </div>
 
       <div class="wave">
         <svg viewBox="0 0 1440 150" preserveAspectRatio="none">
           <path
-            fill="#e2e8f0"
+            fill="#0f172a"
             d="M0,80C240,140,480,140,720,100C960,60,1200,60,1440,100L1440,150L0,150Z"
           ></path>
         </svg>
       </div>
     </header>
     <!-- FIN HEADER -->
-     <!-- INICIO CONTENIDO -->
+    <!-- INICIO CONTENIDO -->
     <main>
       <section id="learn-more">
         <div class="container">
@@ -37,6 +37,18 @@
             Descubre las habilidades y conocimientos que necesitas para tener
             éxito en el mundo de la programación.
           </p>
+        </div>
+      </section>
+      <section class="carousel-section">
+        <h2>Contenido destacado</h2>
+
+        <div class="carousel-container">
+          <div class="carousel" id="carousel">
+            <img src="images/Python_Logo.png" class="item" />
+            <img src="images/java.png" class="item" />
+            <img src="images/js.png" class="item" />
+            <img src="images/php.png" class="item" />
+          </div>
         </div>
       </section>
 
@@ -48,7 +60,8 @@
             <div class="card">
               <h3>Frontend</h3>
               <p>
-                Aprende HTML, CSS y JavaScript para crear interfaces modernas.
+                Aprende HTML, CSS, Ruby y JavaScript para crear interfaces
+                modernas.
               </p>
             </div>
 
@@ -58,22 +71,43 @@
             </div>
 
             <div class="card">
+              <h3>Lenguajes de programación</h3>
+              <p>Python - Java - C# entre otros.</p>
+            </div>
+
+            <div class="card">
               <h3>Herramientas</h3>
               <p>Git, GitHub y metodologías de trabajo profesional.</p>
             </div>
           </div>
         </div>
       </section>
-    </main>
-        <!-- FIN CONTENIDO -->
-        <!-- INICIO FOOTER -->
-    <footer>
-      <div class="container">     
-        <p>&copy; 2026 La ruta del programador. Todos los derechos reservados.</p> <br>
-            <p>Creado por Roger Lalut</p>             
-        </div>
-    </footer>
-        <!-- FIN FOOTER --> 
-    </body>
+      <!-- INICIO FORMULARIO -->
+      <section id="contact">
+        <div class="contact-container">
+          <h2>Contáctanos</h2>
 
+          <form class="contact-form">
+            <input type="text" placeholder="Nombre" required />
+            <input type="email" placeholder="Correo" required />
+            <input type="text" placeholder="Asunto" />
+            <button type="submit">Enviar</button>
+          </form>
+        </div>
+      </section>
+      <!-- FIN FORMULARIO -->
+    </main>
+    <!-- FIN CONTENIDO -->
+    <!-- INICIO FOOTER -->
+    <footer>
+      <div class="container">
+        <p>
+          &copy; 2026 La ruta del programador. Todos los derechos reservados.
+        </p>
+        <br />
+        <p>Creado por Roger Lalut</p>
+      </div>
+    </footer>
+    <!-- FIN FOOTER -->
+  </body>
 </html>

@@ -1,9 +1,11 @@
-
+html {
+    scroll-behavior: smooth;
+}
 /*------------------INICIO MAQUETADO HEADER-----------------------*/
 
 body {
     font-family: 'Poppins', sans-serif;
-    background-color: rgb(82, 82, 82);
+    background-color: #f6f6f6;
     padding: 0;
     margin: 0;
 }
@@ -49,18 +51,24 @@ body {
 .div-header p {
     text-shadow: 0px 4px 20px rgba(0,0,0,0.5);
 }
-.div-header button {
-    background-color: #48494b;
+.div-header .btn {
+    background-color: #535456;
     color: white;
     padding: 12px 25px;
-    border: none;
     border-radius: 8px;
-    font-size: 1rem;
+    text-decoration: none;
     cursor: pointer;
     transition: 0.3s;
+    display: inline-block;
+    font-weight: 500;
+    box-shadow: 0 5px 15px rgba(59,130,246,0.3);
+    text-decoration: none;
+}
+.btn:visited {
+    color: white;
 }
 
-.div-header button:hover {
+.div-header .btn:hover {
     background-color: #373737;
 }
 .wave {
@@ -85,39 +93,79 @@ body {
 
 /*-----------------------------------INICIO MAIN-CONTENT--------------------*/
 #learn-more {
-    background-color: #e2e8f0;
+    background-color: #0f172a;
     padding: 80px 20px;
     text-align: center;
-    padding: 140px 20px 100px; 
+    padding: 140px 20px 50px; 
 }
 #learn-more h2 {
     font-size: 2.8rem;
     font-weight: 600;
     margin-bottom: 25px;
-    color: #0f172a;
+    color: white;
 }
 #learn-more p {
     font-size: 1.2rem;
-    color: #64748b;
+    color: white;
     line-height: 1.8;
 }
-#features {
-    padding: 100px 20px;
-    background-color: white;
+
+/*------------------------inicio carrusel----------------*/
+
+.carousel-container {
+    overflow: hidden;
+    padding: 20px;
+    
+}
+.carousel-section h2{
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 25px;
+    color: black;
     text-align: center;
+   
+}
+
+.carousel {
+    display: flex;
+    gap: 20px;
+    scroll-behavior: smooth;
+}
+
+/* imágenes */
+.item {
+    min-width: 250px;
+    height: 350px;
+    object-fit:contain ;
+    border-radius: 12px;
+    justify-content: space-between;
+
+    transition: transform 0.3s;
+}
+
+.item:hover {
+    transform: scale(1.05);
+}
+
+/*--------------------------fin carrusel------------------*/
+#features {
+    padding: 50px 20px;
+    background-color: #0f172a;
+    text-align: center;
+    color: white;
 }
 .cards {
     display: flex;
-    gap: 20px;
+    gap: 100px;
     margin-top: 40px;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     justify-content: center;
 }
 .card {
     background: #f8fafc;
     padding: 30px;
     border-radius: 12px;
-    width: 250px;
+    min-width:200px;
 
     box-shadow: 0 10px 25px rgba(0,0,0,0.05);
 
@@ -135,3 +183,34 @@ body {
 .card p {
     color: #64748b;
 }
+/*-----------------------------------INICIO formulario--------------------*/
+#contact {
+    padding: 50px 20px;
+    background-color: #f6f6f6;
+    text-align: center;
+}
+.contact-container {
+    max-width: 700px;
+    margin: 0 auto;
+}
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.contact-form input,
+.contact-form button {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+}
+.contact-form button {
+    background-color: #535456;
+    color: white;
+    cursor: pointer;
+}
+.contact-form button:hover {
+    background-color: #373737;
+}
+/*-----------------------------------FIN FORMULARIO--------------------*/
